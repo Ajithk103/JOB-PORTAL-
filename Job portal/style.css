@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+header {
+  background: #2563eb;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px;
+  background: white;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.jobs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.job-card {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.job-card a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.details {
+  background: white;
+  padding: 30px;
+  margin: 40px auto;
+  width: 400px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.login {
+  background: white;
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.login input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
