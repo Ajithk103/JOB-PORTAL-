@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header id="header">
+    <div>Job Portal</div>
+    <span onclick="showProfile()">👤 Profile</span>
+  </header>
+
+  <!-- LOGIN CARD -->
+  <div class="card" id="login">
+    <h2>Login</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="msg"></p>
+  </div>
+
+  <!-- HOME -->
+  <div class="home" id="home">
+    <div class="search">
+      <input type="text" id="search" placeholder="Search jobs..." oninput="filterJobs()">
+    </div>
+    <div class="jobs" id="jobList"></div>
+  </div>
+
+  <!-- JOB DETAILS -->
+  <div class="card details" id="details">
+    <h2 id="jobTitle"></h2>
+    <p>Experience: 0–3 Years</p>
+    <p>Location: Remote</p>
+    <button>Apply Now</button>
+    <div class="back" onclick="goHome()">← Back</div>
+  </div>
+
+  <!-- PROFILE -->
+  <div class="card profile" id="profile">
+    <h2>Ajith K</h2>
+    <p>Email: ajithkizhuveettil04@gmail.com</p>
+    <p>Role: Frontend Developer</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+  <!-- Fixed Back Button -->
+<div class="back-fixed" onclick="goBack()">← Back</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
